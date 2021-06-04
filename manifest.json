@@ -1,0 +1,28 @@
+{
+    "name": "what is my fav color again?",
+    "description": "A 30-mins learning project on Chrome extension. A pop-up window helps user to store his/her fav color at the ease of one click.", 
+    "version": "1.0",
+    "manifest_version": 3, 
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html", 
+        "default_icon" : {
+            "16": "./icons8-reach-50.png", 
+            "32": "./icons8-reach-50.png", 
+            "48": "./icons8-reach-50.png", 
+            "128": "./icons8-reach-50.png"
+        }
+    },
+    "icons": {
+        "16": "./icons8-reach-50.png", 
+        "32": "./icons8-reach-50.png", 
+        "48": "./icons8-reach-50.png", 
+        "128": "./icons8-reach-50.png"
+    },
+    "permissions": ["storage", "activeTab", "scripting"],
+    "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    }
+}
